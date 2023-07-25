@@ -50,12 +50,6 @@ ul {
     list-style: none;
 }
 
-#relogio {
-    margin-top: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(48, 67, 172);
-    font-size: large;
-}
 
 img {
     text-align: center;
@@ -65,3 +59,19 @@ img {
 
     
 }
+
+#relogio {
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(48, 67, 172);
+    font-size: large;
+    position: absolute;
+    top: 58%;
+    left: 40%;
+    font-size: larger;
+    font-weight: bolder;
+    overflow: hidden;
+    background-size: cover;
+    
+}
+
