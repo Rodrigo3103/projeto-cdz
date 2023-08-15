@@ -33,93 +33,103 @@ function horas() {
     setTimeout(horas,1000)
 
 
-
+   
     horasCerta.innerHTML = `${msg} ${hora}:${minuto}:${segundo} - ${sessao}`
+    
 
 
 }
+
+seletor = addEventListener('mousemove',cavaleirosDoZodiaco)// com esse comando pegaremos o resultado automáticamente.
+
+
 
 function cavaleirosDoZodiaco() {
     let selecao = window.document.getElementById('ouros')
     let cavaleiro = selecao.value
     let mostrarCavaleiro = window.document.getElementById('res')
-    let fotoCavaleiro = window.document.getElementById('cavaleiro')
+    let nomeCavaleiro = window.document.getElementById('cavaleiro')
     let img = document.createElement('img')
     img.setAttribute('src','foto')
+    seletor = document.getElementById('res')
+
+    
 
     //mostrarCavaleiro.innerHTML = 'teste' // funcionando
 
     if(cavaleiro=='info') {
-        window.alert('Digite uma Opção')
+       window.alert('Digite uma Opção')
     }else {
         switch (cavaleiro) {
             case cavaleiro.value = 'cav01':
-                mostrarCavaleiro.innerHTML = 'Mu de Aries. <br>'
+                mostrarCavaleiro.innerHTML = '<br>Mu de Aries. <br><br>.'
                 img.setAttribute('src', 'imagens/mu-de-aries.png') 
                 break;
                 
         
             case cavaleiro.value = 'cav02':
-                mostrarCavaleiro.innerHTML = 'Aldebaran de Touro. <br>'
+                mostrarCavaleiro.innerHTML = '<br>Aldebaran de Touro. <br><br>'
                 img.setAttribute('src', 'imagens/aldebaran-de-touro.png')
                 break;
 
             case cavaleiro.value = 'cav03':
-                mostrarCavaleiro.innerHTML = 'Saga de Gêmeos. <br>' 
+                mostrarCavaleiro.innerHTML = '<br>Saga de Gêmeos. <br><br>' 
                 img.setAttribute('src','imagens/saga-de-gemeos.png')   
                 break;
 
 
             case cavaleiro.value = 'cav04':
-                mostrarCavaleiro.innerHTML = 'Máscara da morte de Câncer. <br>'
+                mostrarCavaleiro.innerHTML = '<br>Máscara da morte de Câncer. <br><br>'
                 img.setAttribute('src','imagens/mascara-da-morte.png')
                 break;
 
 
             case cavaleiro.value = 'cav05':
-                mostrarCavaleiro.innerHTML = 'Aiolia de Leão. <br>'
+                mostrarCavaleiro.innerHTML = '<br>Aiolia de Leão. <br><br>'
                 img.setAttribute('src','imagens/aiolia-de-leao.png')
                 break;
 
 
             case cavaleiro.value = 'cav06':
-                mostrarCavaleiro.innerHTML = 'Shaka de Virgem. <br>'
+                mostrarCavaleiro.innerHTML = '<br>Shaka de Virgem. <br><br>'
                 img.setAttribute('src','imagens/shaka-de-virgem.png')
                 break;
 
 
             case cavaleiro.value = 'cav07':
-                mostrarCavaleiro.innerHTML = 'Dohko de Libra. <br>'
+                mostrarCavaleiro.innerHTML = '<br>Dohko de Libra. <br><br>'
                 img.setAttribute('src','imagens/dohko-de-libra.png')
                 break;
 
 
             case cavaleiro.value = 'cav08':
-                mostrarCavaleiro.innerHTML = 'Milo de Escorpião. <br>'
-                img.setAttribute('src','imagens/milo-de-escorpiao.png')
+                mostrarCavaleiro.innerHTML = '<br>Aiolos de Sagitário. <br><br>'
+                img.setAttribute('src','imagens/aiolos-de-sagitario.png')
+               
                 break;
 
 
             case cavaleiro.value = 'cav09':
-                mostrarCavaleiro.innerHTML = 'Aiolos de Sagitário. <br>'
-                img.setAttribute('src','imagens/aiolos-de-sagitario.png')
+                mostrarCavaleiro.innerHTML = '<br>Aiolos de Sagitário. <br><br>'
+                img.setAttribute('src','imagens/milo-de-escorpiao.png')
+              
                 break;
 
 
             case cavaleiro.value = 'cav10':
-                mostrarCavaleiro.innerHTML = 'Shura de Capricórnio. <br>'
+                mostrarCavaleiro.innerHTML = '<br>Shura de Capricórnio. <br><br>'
                 img.setAttribute('src','imagens/shura-de-capricornio.png')
                 break;
 
 
             case cavaleiro.value = 'cav11':
-                mostrarCavaleiro.innerHTML = 'Camus de Aquário. <br>'
+                mostrarCavaleiro.innerHTML = '<br>Camus de Aquário. <br><br>'
                 img.setAttribute('src','imagens/camus-de-aquario.png')
                 break;
 
 
             case cavaleiro.value = 'cav12':
-                mostrarCavaleiro.innerHTML = 'Afrodite de Peixes. <br>'
+                mostrarCavaleiro.innerHTML = '<br>Afrodite de Peixes. <br><br>'
                 img.setAttribute('src','imagens/afrodite-de-peixes.png')
                 break;
 
@@ -135,6 +145,10 @@ function cavaleirosDoZodiaco() {
 function limpar () {
     let limpeza = window.document.getElementById('res')
     limpeza.innerHTML = ''
+    let selecao = window.document.getElementById('ouros')
+    selecao.focus()
+    selecao.value= 'cav01'
+
 }
 
 

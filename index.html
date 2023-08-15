@@ -9,8 +9,39 @@
 
 </head>
 <body onload="horas()">
-    <header><h1>Os Cavaleiros do Zoadíaco</h1></header>
 
+    
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Cavaleiros</a>
+                    <ul id="camada01">
+                        <li>Bronze
+                            <ul id="camada02">
+                                <li>Seiya de Pegasus</li>
+                                <li>Shiryu de Dragão</li>
+                                <li>Shun de Andromeda</li>
+                                <li>Yoga de Cisnei</li>
+                                <li>Ikki de Fênix</li>
+                            </ul>
+                        </li>
+
+                        <li>Plata</li>
+
+                        <li>Ouro</li>
+
+                    </ul>
+                </li>
+                <li><a href="#">Quem Somo</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">ENTRAR</a></li>
+            </ul>
+        </nav>
+        
+    
+    
+    <h1>Os Cavaleiros do Zoadíaco</h1>
     <section>
 
         <div id="dados">
@@ -19,7 +50,7 @@
             <select name="cavaleiros" id="ouros" required>
                 <option value="info" selected>---Escolha seu cavaleiro---</option>
                 <optgroup label="Cavaleiros de Ouros"> 
-                    <option value="cav01">Mu de aries</option>
+                    <option value="cav01" selected>Mu de aries</option>
                     <option value="cav02">Aldebaram de Touro</option>
                     <option value="cav03">Saga de Gemêos</option>
                     <option value="cav04">Mascara da Morte de Cancêr</option>
@@ -38,10 +69,11 @@
 
 
         </div>
+        
 
         <div id="res"></div>
 
-        <div id="cavaleiro"></div>
+        
 
         <div id="relogio" >tem que aparecer a hora</div>
 
